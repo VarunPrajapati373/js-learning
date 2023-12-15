@@ -27,3 +27,30 @@
 // console.log(typeof BigBumver); //undefined
 // console.log(typeof null); //object
 // console.log(typeof undefined); //undefined
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+//Stack(primitive datatype),  Heap(Non- primitive datatype)
+
+//stack ke ander copy milega usme change krne pe original value ni change hoga
+//heap ke andr original value milega usme change hoga value change krne pe
+
+//stack example (primitive dataType)
+let firstName = "varun"
+let secondName = firstName
+secondName="tarun"
+console.log(firstName);
+console.log(secondName);
+
+
+//heap example (non -primitive dataType)
+let userOne= {
+
+    email:"user@gmail.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+userTwo.email="varun@gmail.com"
+console.log(userOne)
+console.log(userTwo);
